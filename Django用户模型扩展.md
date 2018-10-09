@@ -1,6 +1,6 @@
 # Django用户模型扩展
 
-## **前言**
+## 前言
 
 Django 模型本身自带User模型，可以完成基本的用户功能，不过由于其自带属性较少（用户名，密码，姓，名，邮箱，权限），有时难以满足使用，因此需要涉及用户模型扩展。
 本方法思路是创建一个普通模型，使其与Django自带用户模型形成一一对应关系
@@ -10,14 +10,14 @@ Django 模型本身自带User模型，可以完成基本的用户功能，不过
 
 所以需要根据具体情况斟酌使用。
 
-## **环境**
+## 环境
 
 - windows10
 - pycharm2017.3.3 professional edition
 - python3.6.4
 - django2.0.2
 
-## **方法**
+## 方法
 
 使用Profile扩展，默认已使用Django自带用户模型
 
@@ -54,7 +54,7 @@ Django 模型本身自带User模型，可以完成基本的用户功能，不过
     <p>{{ user.profile.company }}</p>
     ```
 
-## **参考文档**
+## 参考文档
 
 - [django用户认证系统——拓展 User 模型2](https://www.cnblogs.com/AmilyWilly/p/8469851.html)
 - [如何扩展Django用户模块](http://python.jobbole.com/86806/)

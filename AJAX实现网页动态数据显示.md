@@ -1,13 +1,13 @@
 # AJAX实现网页动态数据显示
 
-## **环境**
+## 环境
 
 - windows10
 - pycharm2017.3.3 professional edition
 - python3.6.4
 - django2.0.2
 
-## **方法**
+## 方法
 
 1. 创建后台读取数据函数，用于后台从数据库读取数据。在views.py文件内增加以下代码
     ```python

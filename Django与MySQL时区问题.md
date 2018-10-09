@@ -1,17 +1,17 @@
 # Django 与MySQL时区问题
 
-## *前言*
+## 前言
 
 Django 使用MySQL数据库出现的时区问题
 
-## *环境*
+## 环境
 
 - Windows 10
 - pycharm 2017.3.3 professional edition
 - python 3.6.4
 - django 2.0.2
 
-## *方法*
+## 方法
 
 1. 将Django 项目默认的UTC时区修改为本地时区
 
@@ -33,6 +33,6 @@ Django 使用MySQL数据库出现的时区问题
     USE_TZ = False
     ```
 
-## *备注*
+## 备注
 
 带图教程，[请点这里](https://blog.csdn.net/mildddd/article/details/79800860)

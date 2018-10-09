@@ -1,17 +1,17 @@
 # Django urls 路由与app子路由
 
-## **前言**
+## 前言
 
 在网页本身较少的情况下Django 项目可以只使用单个app 和项目自带的urls文件进行路由，但是在网页较为复杂或项目内有多个app的情况下就不太合适了，这时就需要在app中单独设置路由
 
-## **环境**
+## 环境
 
 - windows10
 - pycharm2017.3.3 professional edition
 - python3.6.4
 - django2.0.2
 
-## **方法**
+## 方法
 
 为方便表达，统一将项目同名文件下的urls.py文件称为主路由，项目app 内的urls.py 称为子路由
 

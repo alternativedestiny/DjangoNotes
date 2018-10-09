@@ -1,15 +1,15 @@
 # Django项目创建流程
 
-## *前言*
+## 前言
 
-## *环境*
+## 环境
 
 - Windows 10
 - pycharm2017.3.3 professional edition(必须专业版)
 - python3.6.4
 - django2.0.2
 
-## *方法*
+## 方法
 
 1. 打开Pycharm专业版，创建Django项目
 2. 创建APP，
@@ -46,6 +46,6 @@
     python manage.py runserver
     ```
 
-## *备注*
+## 备注
 
 带图教程，[请点这里](https://blog.csdn.net/mildddd/article/details/79557937)

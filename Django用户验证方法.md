@@ -1,17 +1,17 @@
 # Django用户验证方法
 
-## **前言**
+## 前言
 
 这部分主要是需要保证网站的一些敏感页面不被普通游客访问到，需要一整套用户系统
 
-## **环境**
+## 环境
 
 - windows10
 - pycharm2017.3.3 professional edition
 - python3.6.4
 - django2.0.2
 
-## **方法**
+## 方法
 
 1. 创建登陆页面，与普通HTML页面创建方法相同，比如下面这个最基本的登陆页面
     ```html
@@ -84,7 +84,7 @@
             return render(request, "login.html", {"message": "请输入用户名和密码！"})
     ```
 
-## **备注**
+## 备注
 
 - CSRF（Cross-site request forgery）跨站请求伪造。Django 为了防止CSRF 攻击有一些保护措施，因此我们在使用POST 时会出现django csrf token missing or incorrect的错误，因此需要在POST表单中加入 {% csrf_token %}，原理部分此时先不做深究，因为我也没有研究这方面
 - 关于render的一些问题，因为render 本身自带一个request 参数，这个参数其实包含有很多信息，其中就有用户信息，因此在使用render时，即便我们没有向网页传递任何参数，网页依然可以访问到用户信息，比如使用{{user}}就可以显示用户名，这就是request起到的作用
