@@ -10,10 +10,13 @@
 ## 方法
 
 1. makemigrations会在当前目录下生成一个migrations文件夹，该文件夹的内容就是数据库要执行的内容
+
     ```cmd
     python manage.py makemigrations
     ```
+
 2. migrate就是执行之前生成的migrations文件，这一步才是操作数据库的一步
+
     ```cmd
     python manage.py migrate
     ```

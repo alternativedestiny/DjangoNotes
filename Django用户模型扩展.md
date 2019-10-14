@@ -46,10 +46,13 @@ Django 模型本身自带User模型，可以完成基本的用户功能，不过
 
 3. 模型的使用，在网页内
     - Django自带模型
+
     ```html
     <p>{{ user.email }}</p>
     ```
+
     - 扩展模型
+
     ```html
     <p>{{ user.profile.company }}</p>
     ```

@@ -16,6 +16,7 @@ Django 使用MySQL数据库出现的时区问题
 1. 将Django 项目默认的UTC时区修改为本地时区
 
     打开Django 项目的settings.py文件，修改TIME_ZONE为
+
     ```python
     TIME_ZONE = 'Asia/Shanghai'
     ```
@@ -25,10 +26,13 @@ Django 使用MySQL数据库出现的时区问题
     在数据库和Django都为本地时区时，通过Django写入数据库的数据，从数据库中看相差8个小时，显示出来也相差8个小时，这是因为Django 在写入数据库时将本地时区变成了UTC时区
 
     解决方法：将settings.py文件里的
+
     ```python
     USE_TZ = True
     ```
+
     改为
+
     ```python
     USE_TZ = False
     ```

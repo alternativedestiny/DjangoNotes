@@ -20,10 +20,12 @@
 2. 打开django 项目，在项目的根目录或APP 下创建一个文件夹命名为static 用于保存css、js、images 等文件，templates 文件夹用于保存html 文件，路径如图，pj1为项目名称
    ![路径](2018-10-08-16-59-05.png)
 3. 打开项目，在pj1/settings.py文件里寻找 TEMPLATES 选项，添加static文件
+
     ```python
     'DIRS': [os.path.join(BASE_DIR, 'templates'),
                 os.path.join(BASE_DIR, 'static').replace('\\', '/')],
     ```
+
     在settings.py最底部添加
 
     ```python
@@ -35,11 +37,13 @@
         ('js', os.path.join(STATIC_ROOT, 'js').replace('\\', '/')),
     )
     ```
+
 4. 修改urls.py文件在文件头添加
 
     ```python
     from django.contrib.staticfiles.urls import staticfiles_urlpatterns
     ```
+
     在文件尾部添加
 
     ```python
@@ -49,15 +53,18 @@
 5. 修改HTML文件里面的路径
 
     导入css
+
     ```html
     <link href="/static/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
     <link href="/static/css/style.css" rel="stylesheet" type="text/css" media="all" />
     ```
+
     导入js
 
     ```html
     <script src="/static/js/jquery-1.11.1.min.js"></script>
     ```
+
     插图
 
     ```html
